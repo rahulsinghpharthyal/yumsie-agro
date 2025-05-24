@@ -30,7 +30,7 @@ import paste2 from "../assets/YumsieProducts/GGP/IMG_3819.JPG";
 import paste3 from "../assets/YumsieProducts/GGP/IMG_3820.JPG";
 import paste4 from "../assets/YumsieProducts/GGP/IMG_3930.jpg";
 
-import continentalSauce from "../assets/YumsieProducts/1.2/IMG_3865.JPG";
+import continentalSauce from "../assets/YumsieProducts/1.2/IMG_3865.jpg";
 import Sauces from "../assets/YumsieProducts/Souce/IMG_3795.JPG";
 import GingerGarlicPaste from "../assets/YumsieProducts/GGP/IMG_3824.jpg";
 import MixedPickle from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
