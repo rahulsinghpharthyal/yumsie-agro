@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+html, body {
+/* height: 100%; */
+  /* margin: 0;  */
+  /* padding: 0;  */
+  /* overflow-x: hidden;  */
+}
+
+/* this is for product carousel*/
+/* Ensure smooth transforms */
+.slick-slide {
+  transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Make center slide larger */
+.slick-center .carousel-card {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+}
