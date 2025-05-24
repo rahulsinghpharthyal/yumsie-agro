@@ -128,7 +128,7 @@ export const ProductData = [
     ingredients: 13,
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: sauces5,
+    image: sauce5,
   },
   {
     title: "Ginger Garlic Paste",
