@@ -31,7 +31,6 @@ import paste3 from "../assets/YumsieProducts/GGP/IMG_3820.JPG";
 import paste4 from "../assets/YumsieProducts/GGP/IMG_3930.jpg";
 
 import continentalSauce from "../assets/YumsieProducts/1.2/IMG_3865.jpg";
-import Sauces from "../assets/YumsieProducts/Souce/IMG_3795.JPG";
 import GingerGarlicPaste from "../assets/YumsieProducts/GGP/IMG_3824.jpg";
 import MixedPickle from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
 import GreenChiliPickle from "../assets/YumsieProducts/Pickle/IMG_3800.JPG";
@@ -95,7 +94,7 @@ export const HomeCarouselSlides = [
     brand: "Yumsie",
     description:
       "Whether it’s hot chili sauce, smoky barbecue, or creamy garlic dip — Yumsie’s gourmet sauces elevate every bite. Perfect for dipping, marinating, or finishing touches on your favorite dishes.",
-    image1: Sauces,
+    image1: sauce5,
     buttonText: "EXPLORE SAUCES",
   },
   {
@@ -129,7 +128,7 @@ export const ProductData = [
     ingredients: 13,
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: Sauces,
+    image: sauces5,
   },
   {
     title: "Ginger Garlic Paste",
