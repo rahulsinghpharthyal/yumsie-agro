@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import mango_pickle1 from "../assets/YumsieProducts/Pickle/IMG_3797.JPG";
 import pickle1 from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
-import pickle2 from "../assets/YumsieProducts/Pickle/IMG_3800.JPG";
+import pickle2 from "../assets/YumsieProducts/Pickle/IMG_3800.jpg";
 import pickle3 from "../assets/YumsieProducts/Pickle/IMG_3801.jpg";
 import pickle4 from "../assets/YumsieProducts/Pickle/IMG_3802.jpg";
 import pickle5 from "../assets/YumsieProducts/Pickle/IMG_3803.jpg";
