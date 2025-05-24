@@ -1,5 +1,5 @@
 import React from "react";
-import factoryImage from "../../assets/YumsieProducts/IMG_0002.JPG"; // Update with your image path
+import factoryImage from "../../assets/logo.jpg"; // Update with your image path
 import backgroundImage from "../../assets/Background.jpeg"; // Update with your image path
 import { Link } from "react-router-dom";
 

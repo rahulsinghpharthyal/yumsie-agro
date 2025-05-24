@@ -1,5 +1,5 @@
 import React from "react";
-import certificateImage from "../../assets/YumsieProducts/IMG_0007.JPG"; // replace with your image path
+import certificateImage from "../../assets/logo.jpg"; // replace with your image path
 import backgroundImage from "../../assets/Background.jpeg"; // Update with your image path
 
 import { Link } from "react-router-dom";
