@@ -1,16 +1,18 @@
 import ClientSection from "../components/Aboutus/ClientSection";
 import aboutImage from "../assets/AboutUs.png";
 import MissionAndVision from "../components/Aboutus/MissionAndVision";
+import LazyImage from "../components/common/LazyImage";
 
 const AboutUs = () => {
   return (
     <section className="w-full mt-30 md:mt-20">
       {/* Header Section */}
       <div className="relative w-full h-48 sm:h-64 md:h-96">
-        <img
+        <LazyImage
           src={aboutImage}
           alt="About Us"
-          className="object-cover w-full h-full"
+          className="w-full h-full"
+          priority={true} // Load header image immediately
         />
         {/* Optional overlay title */}
         {/* <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -88,7 +90,7 @@ const AboutUs = () => {
       <MissionAndVision/>
 
       {/* Client Section Component */}
-      {/* <ClientSection /> */}
+      <ClientSection />
     </section>
   );
 };

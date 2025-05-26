@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import LazyImage from "../common/LazyImage";
 import { ProductData } from "../../config/constant";
 
 const ProductCarousel = () => {
@@ -13,6 +13,7 @@ const ProductCarousel = () => {
     slidesToShow: 3,
     speed: 500,
     arrows: true,
+    lazyLoad: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -40,11 +41,12 @@ const ProductCarousel = () => {
       <Slider {...settings}>
         {ProductData.map((recipe, index) => (
           <div key={index} className="slide-wrapper px-2">
-            <div className="carousel-card relative overflow-hidden rounded-xl ">
-              <img
+            <div className="carousel-card relative overflow-hidden rounded-xl">
+              <LazyImage
                 src={recipe.image}
                 alt={recipe.title}
-                className="w-full h-[350px] object-contain rounded-xl"
+                className="w-full h-[350px] rounded-xl object-cover"
+                priority={index < 3} // Load first 3 images immediately
               />
               <div className="absolute inset-0 bg-black/10 p-4 flex flex-col justify-between">
                 <h3 className="text-green-500 text-lg font-bold">{recipe.title}</h3>
