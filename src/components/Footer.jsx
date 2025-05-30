@@ -23,14 +23,11 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-4">
-            <a href="#" className="text-blue-500 hover:scale-110 transition">
+            <a href="https://www.facebook.com/share/1ASBxxAUsS/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:scale-110 transition">
               <FaFacebookF size={22} />
             </a>
-            <a href="#" className="text-pink-500 hover:scale-110 transition">
+            <a href="https://www.instagram.com/yumsiefood?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:scale-110 transition">
               <FaInstagram size={22} />
-            </a>
-            <a href="#" className="text-red-600 hover:scale-110 transition">
-              <FaYoutube size={22} />
             </a>
           </div>
         </div>
@@ -43,7 +40,7 @@ const Footer = () => {
             {[
               { name: "Home", path: "/" },
               { name: "About", path: "/about-us" },
-              { name: "Blog", path: "/blogs" },
+              { name: "Products", path: "/products/pickles" },
               { name: "Contact", path: "/contact-us" },
               // { name: "Privacy Policy", path: "/privacy-policy" },
             ].map((link) => (
@@ -72,7 +69,7 @@ const Footer = () => {
             <div>
               {/* <p >info@yusimeagro.com</p> */}
               <a
-                href="mailto:support@infoyusimieagro.in"
+                href="mailto:supportInfo@yumsiefoods.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white font-semibold"

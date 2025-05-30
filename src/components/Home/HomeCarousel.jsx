@@ -55,14 +55,13 @@ const HomeCarousel = () => {
       </div>
     ),
   };
-
   return (
-    <div className="w-full px-0 lg:mt-20 mt-10">
+    <div className="w-full lg:mt-20 mt-10">
   <Slider {...settings}>
     {HomeCarouselSlides.map((slide, index) => (
       <div
         key={index}
-        className="relative bg-white overflow-hidden rounded-none lg:rounded-3xl shadow-md px-4 md:px-10 py-10 w-full"
+        className="relative overflow-hidden rounded-none px-4 md:px-10 py-10"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 max-w-screen-xl mx-auto">
           {/* Text Section */}

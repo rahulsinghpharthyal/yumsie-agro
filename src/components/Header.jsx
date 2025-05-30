@@ -152,10 +152,10 @@ const Header = () => {
             Blog
           </Link> */}
           <Link
-            to="/faqs"
+            to="/manufacturing-facility"
             className="text-black hover:text-blue-600 transition-colors"
           >
-            FAQs
+            Manufacturing Facility
           </Link>
           <Link
             to="/contact-us"
@@ -278,11 +278,11 @@ const Header = () => {
             Blog
           </Link>
           <Link
-            to="/faqs"
+            to="/manufacturing-facility"
             className="block py-2 text-black hover:text-blue-600 transition-colors"
             onClick={handleMobileLinkClick}
           >
-            FAQs
+            Manufacturing Facility
           </Link>
           <Link
             to="/contact-us"

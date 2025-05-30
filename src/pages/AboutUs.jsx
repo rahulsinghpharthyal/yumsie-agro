@@ -2,10 +2,11 @@ import ClientSection from "../components/Aboutus/ClientSection";
 import aboutImage from "../assets/AboutUs.png";
 import MissionAndVision from "../components/Aboutus/MissionAndVision";
 import LazyImage from "../components/common/LazyImage";
+import WhoAreWe from "../components/Home/WhoAreWe";
 
 const AboutUs = () => {
   return (
-    <section className="w-full mt-30 md:mt-20">
+    <section className="px-4 md:px-8 lg:px-0 mt-28">
       {/* Header Section */}
       <div className="relative w-full h-48 sm:h-64 md:h-96">
         <LazyImage
@@ -21,7 +22,7 @@ const AboutUs = () => {
       </div>
 
       {/* About Section */}
-      <div className="max-w-6xl mx-auto px-4 py-10 sm:py-12">
+      <div className="max-w-6xl mx-auto py-10 sm:py-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-800 mb-4">
           About Us
         </h2>
@@ -61,7 +62,7 @@ const AboutUs = () => {
       </div>
 
       {/* Why Choose Us Section */}
-      <div className="max-w-6xl mx-auto px-4 pb-12">
+      {/* <div className="max-w-6xl mx-auto px-4 pb-12">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-800 mb-4">
           Why Choose Us
         </h2>
@@ -85,12 +86,18 @@ const AboutUs = () => {
           <li>Hygiene standards</li>
           <li>Maintained at each level of production</li>
         </ul>
-      </div>
+      </div> */}
 
+      <section className="max-w-6xl mx-auto py-10 sm:py-12">
+        <WhoAreWe />
+      </section>
+
+      <section className="max-w-6xl mx-auto py-10 sm:py-12">
       <MissionAndVision/>
+      </section>
 
       {/* Client Section Component */}
-      <ClientSection />
+      {/* <ClientSection /> */}
     </section>
   );
 };

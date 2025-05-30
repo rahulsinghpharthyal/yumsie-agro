@@ -38,13 +38,14 @@ import Pickles from "../assets/YumsieProducts/Pickle/IMG_3811.JPG";
 
 // For Contact Us Page:-
 export const contacts = [
-  // {
-  //   icon: <FaFacebook size={30} color="#1877F2" />,
-  //   title: "Facebook",
-  //   description: "Join us on Facebook.",
-  //   buttonText: "Visit Facebook",
-  //   buttonLink: "https://www.facebook.com/geneus.solutions",
-  // },
+  {
+    Icon: FaFacebook,
+    color: "blue",
+    title: "Facebook",
+    description: "Join us on Facebook.",
+    buttonText: "Visit Facebook",
+    buttonLink: "https://www.facebook.com/share/1ASBxxAUsS/?mibextid=wwXIfr",
+  },
   // {
   //   icon: <FaLinkedin size={30} color="#0A66C2" />,
   //   title: "LinkedIn",
@@ -58,7 +59,7 @@ export const contacts = [
     title: "Instagram",
     description: "Follow us on Instagram.",
     buttonText: "Visit Instagram",
-    buttonLink: "https://www.instagram.com/geneus.solutions",
+    buttonLink: "https://www.instagram.com/yumsiefood?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
   },
   {
     Icon: MdEmail,
@@ -66,7 +67,7 @@ export const contacts = [
     title: "Email Us",
     description: "Send us an email anytime.",
     buttonText: "Send Mail",
-    buttonLink: "mailto:support@geneussolutions.in",
+    buttonLink: "mailto:supportInfo@yumsiefoods.com",
   },
   {
     Icon: MdPhone,

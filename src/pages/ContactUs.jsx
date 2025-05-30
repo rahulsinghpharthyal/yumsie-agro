@@ -45,14 +45,14 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="text-center py-16 mt-10 px-5">
-      <div className="mb-10">
+    <section className="text-center py-16 mt-10 px-20">
+      {/* <div className="mb-10">
         <img
           src="https://kapilanandagro.com/wp-content/uploads/2023/06/Kaapl-contact-us.jpg"
           alt="Contact Us Banner"
           className="mx-auto w-full shadow-md"
         />
-      </div>
+      </div> */}
       <div className="mb-10">
         <h1 className="text-3xl md:text-4xl font-bold mt-2 text-left">
           Get In Touch With Our Team
@@ -149,7 +149,7 @@ const ContactUs = () => {
       <div className="mt-10">
         <iframe
           title="Google Map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d266030.4014813481!2d77.47257226630136!3d12.951174118925985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1745840997330!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55839.533531637215!2d79.3543542483306!3d28.98823492063651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a07f9567c1f745%3A0xdffe5c8738783baf!2sRudrapur%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1748426483207!5m2!1sen!2sin"
           width="100%"
           height="400"
           className="w-full rounded-lg mt-8 border-0"
@@ -157,6 +157,7 @@ const ContactUs = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
+
       </div>
     </section>
   );

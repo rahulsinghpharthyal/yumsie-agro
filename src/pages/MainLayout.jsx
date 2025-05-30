@@ -7,19 +7,19 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50overflow-x-hidden">
+    <div className="flex flex-col min-h-screen bg-gradient-to-br from-blue-50 via-purple-100 to-pink-50 overflow-x-hidden">
       <Header />
 
       {/* Main Content Area */}
       <main className="flex-grow flex items-center justify-center w-full">
-        <div className="w-full max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="w-full">
           <Outlet />
         </div>
       </main>
 
       <Footer />
       {/* Floating WhatsApp Button */}
-      <a
+      {/* <a
         href="https://wa.me/916397104144?text=Hello%20Yusime%20Agro%2C%20I%20am%20interested%20in%20your%20products.%20Please%20share%20more%20details."
         target="_blank"
         rel="noopener noreferrer"
@@ -27,7 +27,7 @@ const MainLayout = () => {
         aria-label="Chat on WhatsApp"
       >
         <FaWhatsapp size={28} />
-      </a>
+      </a> */}
     </div>
   );
 };

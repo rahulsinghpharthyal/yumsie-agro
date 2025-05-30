@@ -39,7 +39,7 @@ const ManufacturingFacility = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-10 z-0">
             <Link
-              to="/about-us"
+              to="/manufacturing-facility"
               className="text-center text-xl bg-cyan-600 hover:bg-cyan-700 text-white font-medium px-10 py-6 rounded-4xl shadow transition-all"
             >
               Learn More
