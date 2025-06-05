@@ -1,4 +1,4 @@
-import { MdEmail, MdPhone } from "react-icons/md";
+import { MdEmail, MdPhone, MdYard } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import mango_pickle1 from "../assets/YumsieProducts/Pickle/IMG_3797.JPG";
@@ -24,6 +24,11 @@ import sauce2 from "../assets/YumsieProducts/Souce/IMG_3792.JPG";
 import sauce3 from "../assets/YumsieProducts/Souce/IMG_3793.jpg";
 import sauce4 from "../assets/YumsieProducts/Souce/IMG_3794.jpg";
 import sauce5 from "../assets/YumsieProducts/Souce/IMG_3795.jpg";
+import Sauces6 from "../assets/YumsieProducts/650/IMG_3839.jpg";
+import Sauces7 from "../assets/YumsieProducts/650/IMG_3844.jpg";
+import Sauces8 from "../assets/YumsieProducts/650/IMG_3847.jpg";
+import Sauces9 from "../assets/YumsieProducts/650/IMG_0158.jpg";
+
 
 import paste1 from "../assets/YumsieProducts/GGP/IMG_3818.JPG";
 import paste2 from "../assets/YumsieProducts/GGP/IMG_3819.JPG";
@@ -35,6 +40,10 @@ import GingerGarlicPaste from "../assets/YumsieProducts/GGP/IMG_3824.jpg";
 import MixedPickle from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
 import GreenChiliPickle from "../assets/YumsieProducts/Pickle/IMG_3800.jpg";
 import Pickles from "../assets/YumsieProducts/Pickle/IMG_3811.JPG";
+import Sauces from "../assets/YumsieProducts/650/IMG_3853.jpg";
+
+import Mayonnaise from "../assets/YumsieProducts/mayonnaise/IMG_0013.JPG";
+import Mayonnaise1 from "../assets/YumsieProducts/mayonnaise/IMG_0098.JPG";
 
 // For Contact Us Page:-
 export const contacts = [
@@ -73,7 +82,7 @@ export const contacts = [
     Icon: MdPhone,
     color: "#10B981",
     title: "Call Us",
-    description: "We’re just a call away.",
+    description: "We're just a call away.",
     buttonText: "Call Now",
     buttonLink: "tel:+918800123456",
   },
@@ -94,15 +103,15 @@ export const HomeCarouselSlides = [
     title: "Bold Flavors in Every Drop",
     brand: "Yumsie",
     description:
-      "Whether it’s hot chili sauce, smoky barbecue, or creamy garlic dip — Yumsie’s gourmet sauces elevate every bite. Perfect for dipping, marinating, or finishing touches on your favorite dishes.",
-    image1: sauce5,
+      "Whether it's hot chili sauce, smoky barbecue, or creamy garlic dip — Yumsie's gourmet sauces elevate every bite. Perfect for dipping, marinating, or finishing touches on your favorite dishes.",
+    image1: Sauces,
     buttonText: "EXPLORE SAUCES",
   },
   {
     title: "Freshly Ground. Instantly Flavorful.",
     brand: "Yumsie",
     description:
-      "Yumsie’s Ginger Garlic Paste blends the warmth of fresh ginger with the boldness of garlic — a must-have base for curries, stir-fries, and marinades. No peeling, no chopping — just pure, ready-to-use aroma and taste.",
+      "Yumsie's Ginger Garlic Paste blends the warmth of fresh ginger with the boldness of garlic — a must-have base for curries, stir-fries, and marinades. No peeling, no chopping — just pure, ready-to-use aroma and taste.",
     image1: GingerGarlicPaste,
     buttonText: "EXPLORE PASTES",
   },
@@ -110,13 +119,13 @@ export const HomeCarouselSlides = [
 
 // Product Carousel data:-
 export const ProductData = [
-  {
-    title: "Continental Sauce",
-    ingredients: 7,
-    time: "35 minutes",
-    calories: "326 cals/serving",
-    image: continentalSauce,
-  },
+  // {
+  //   title: "Continental Sauce",
+  //   ingredients: 7,
+  //   time: "35 minutes",
+  //   calories: "326 cals/serving",
+  //   image: continentalSauce,
+  // },
   {
     title: "Pickles",
     ingredients: 13,
@@ -226,7 +235,7 @@ export const blogsCard = [
     path: "/blogs/pickles",
   },
   {
-    title: "A Tangy Tale: Pickles – India’s Beloved Culinary Treasure",
+    title: "A Tangy Tale: Pickles – India's Beloved Culinary Treasure",
     author: "Yumsie Agro",
     image: paste1,
     path: "/blogs/mayonnaise",
@@ -244,7 +253,7 @@ export const blogsCard = [
 export const blogs = [
   {
     id: "pickles",
-    title: "A Tangy Tale: Pickles – India’s Beloved Culinary Treasure",
+    title: "A Tangy Tale: Pickles – India's Beloved Culinary Treasure",
     image: mango_pickle1,
     content: `
 Pickles are a cherished part of Indian cuisine, offering a burst of flavor and a link to cultural traditions passed through generations.
@@ -280,7 +289,7 @@ Indian pickles have found global recognition, appearing in fusion dishes like pi
       "More Than Just a Spread: The Versatility of Mayonnaise in Modern Cooking",
     image: paste1,
     content: `
-Mayonnaise is often underestimated as a basic condiment, but it’s actually one of the most flexible and essential ingredients in a modern kitchen.
+Mayonnaise is often underestimated as a basic condiment, but it's actually one of the most flexible and essential ingredients in a modern kitchen.
 
 1. Smooth Base for Dressings:
 From Caesar to ranch, mayonnaise is the creamy foundation for countless salad dressings.
@@ -316,7 +325,7 @@ Its acidity and fat help tenderize meat and infuse flavor when used in marinades
 Sauces are essential to cuisine across the globe, acting as the final brushstroke that transforms a meal from ordinary to extraordinary.
 
 1. Foundational Flavors:
-French cuisine identifies five “mother sauces” (béchamel, velouté, espagnole, hollandaise, tomato) as bases for endless variations.
+French cuisine identifies five "mother sauces" (béchamel, velouté, espagnole, hollandaise, tomato) as bases for endless variations.
 
 2. Global Identity:
 From soy sauce in Asia to chimichurri in South America, sauces reflect regional tastes and traditions.
@@ -346,82 +355,169 @@ Modern chefs blend sauces from different cuisines—like teriyaki-glazed tacos o
 // src/data/productData.js
 
 export const productData = {
-  pastes: {
-    heading: "Discover CULINARY DELIGHTS",
-    subheading: "at your fingertips...",
-    description: `Discover a world of flavor with our exquisite selection of cooking pastes...`,
-    pastes: [
-      {
-        title: "Garlic Paste",
-        text: "Our Garlic paste is made from handpicked garlic cloves...",
-      },
-      {
-        title: "Ginger Paste",
-        text: "Made from freshly harvested ginger roots...",
-      },
-      {
-        title: "Ginger Garlic Paste",
-        text: "A harmonious blend of fresh ginger and garlic...",
-      },
-    ],
-    images: {
-      banner: "/images/banner-pastes.jpg",
-      items: [GingerGarlicPaste, paste1, paste2, paste3, paste4],
-    },
-  },
-  sauces: {
-    heading: "Experience Saucy Goodness",
-    subheading: "for every meal...",
-    description: `Our sauces are the perfect blend of rich ingredients and flavors...`,
-    pastes: [
-      {
-        title: "Tomato Sauce",
-        text: "Fresh tomatoes cooked and pureed for a classic sauce...",
-      },
-      {
-        title: "Chili Sauce",
-        text: "Spicy, bold, and perfect for heat lovers...",
-      },
-    ],
-    images: {
-      banner: "/images/banner-sauces.jpg",
-      items: [sauce1,sauce2,sauce3,sauce4,sauce5,],
-    },
-  },
   pickles: {
     heading: "Pickles That Pop",
     subheading: "Tangy, spicy, and bold...",
-    description: `Our pickles are aged and spiced to perfection...`,
-    pastes: [
+    description: `Our pickles are aged and spiced to perfection, offering a burst of authentic Indian flavors.`,
+    products: [
       {
-        title: "Mango Pickle",
-        text: "Sun-dried mangoes pickled with traditional spices...",
+        title: "Mix Pickle",
+        sizes: ["1 kg", "500 gm", "200 gm"],
+        images: [pickle16, pickle1, pickle3], 
       },
       {
-        title: "Lime Pickle",
-        text: "Tangy limes mixed with chili and mustard seeds...",
+        title: "Mango Pickle",
+        sizes: ["1 kg", "500 gm", "200 gm"],
+        images: [pickle15,  pickle4,mango_pickle1], 
+      },
+      {
+        title: "Green Chilli Pickle",
+        sizes: ["1 kg", "500 gm", "200 gm"],
+        images: [pickle14, pickle5, pickle6], 
       },
     ],
     images: {
       banner: "/images/banner-pickles.jpg",
-      items: [
-        pickle1,
-        pickle2,
-        pickle3,
-        pickle4,
-        pickle5,
-        pickle6,
-        pickle7,
-        pickle8,
-        pickle9,
-        pickle10,
-        pickle11,
-        pickle12,
-        pickle13,
-        pickle14,
-        pickle15,
-        pickle16,
-      ],
+    },
+  },
+  'tomato-ketchup': {
+    heading: "Experience Saucy Goodness",
+    subheading: "for every meal...",
+    description: `Our Tomato Ketchup is a classic favorite, perfect for dipping, cooking, and adding a tangy-sweet flavor to your meals.`,
+    products: [
+      {
+        title: "Tomato Ketchup",
+        sizes: ["1 kg", "500 gm", "200 gm"],
+        images: [sauce1, sauce2], 
+      },
+    ],
+    images: {
+      banner: "/images/banner-sauces.jpg", 
+    },
+  },
+  'culinary-sauces-vinegar': {
+    heading: "Culinary Sauces & Vinegar",
+    subheading: "Elevate your dishes...",
+    description: `A range of versatile sauces and vinegars to enhance any meal, from spicy delights to zesty dressings.`,
+    products: [
+      {
+        title: "Green Chilli Sauce",
+        sizes: ["650 gm", "200 gm"],
+        images: [sauce4, Sauces7], 
+      },
+      {
+        title: "Red Chilli Sauce",
+        sizes: ["650 gm", "200 gm"],
+        images: [sauce3, Sauces6], 
+      },
+      {
+        title: "Soya Sauce",
+        sizes: ["650 gm", "200 gm"],
+        images: [sauce1, Sauces8], 
+      },
+      {
+        title: "White Vinegar",
+        sizes: ["610 ml", "180 ml"],
+        images: [Sauces9], 
+      },
+    ],
+    images: {
+      banner: "/images/banner-culinary-sauces.jpg",
+    },
+  },
+  'speciality-sauce': {
+    heading: "Speciality Sauces",
+    subheading: "Unique flavors, unforgettable taste...",
+    description: `Explore our unique collection of speciality sauces crafted to perfection for an unforgettable culinary experience.`,
+    products: [
+      {
+        title: "Momo's Sauce",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce1], 
+      },
+      {
+        title: "Pizza Pasta Sauce",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce2], 
+      },
+      {
+        title: "Schezwan Sauce",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce3], 
+      },
+      {
+        title: "Chilly Garlic Sauce",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce4], 
+      },
+    ],
+    images: {
+      banner: "/images/banner-speciality-sauce.jpg",
+    },
+  },
+  'mayonnaise-derivatives': {
+    heading: "Mayonnaise & Derivatives",
+    subheading: "Creamy, rich, and versatile...",
+    description: `Our creamy mayonnaise and its delicious derivatives are perfect for enhancing sandwiches, salads, and countless other dishes.`,
+    products: [
+      {
+        title: "Eggless Mayonnaise",
+        sizes: ["1 kg", "200 gm"],
+        images: [Mayonnaise, Mayonnaise1], 
+      },
+      {
+        title: "Cheese Mayonnaise",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce2], 
+      },
+      {
+        title: "Tandoori Mayonnaise",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce3], 
+      },
+      {
+        title: "Thousand Island",
+        sizes: ["1 kg", "200 gm"],
+        images: [sauce4], 
+      },
+    ],
+    images: {
+      banner: "/images/banner-mayonnaise.jpg",
+    },
+  },
+  'cooking-paste': {
+    heading: "Discover CULINARY DELIGHTS",
+    subheading: "at your fingertips...",
+    description: `Discover a world of flavor with our exquisite selection of cooking pastes, essential for authentic and flavorful meals.`,
+    products: [
+      {
+        title: "Ginger Garlic Paste",
+        sizes: ["25 gm", "200 gm", "500 gm", "1 kg"],
+        images: [GingerGarlicPaste, paste1, paste2], 
+      },
+    ],
+    images: {
+      banner: "/images/banner-pastes.jpg",
+    },
+  },
+  'canned-food': {
+    heading: "Canned Food",
+    subheading: "Convenience meets quality...",
+    description: `High-quality canned foods for quick and easy meals, preserving freshness and flavor for your convenience.`,
+    products: [
+      {
+        title: "Tomato Puree",
+        sizes: ["825 gm"],
+        images: [pickle7], 
+      },
+      {
+        title: "Button Mushroom",
+        sizes: ["800 gm"],
+        images: [pickle8], 
+      },
+    ],
+    images: {
+      banner: "/images/banner-canned-food.jpg",
     },
   },
 };

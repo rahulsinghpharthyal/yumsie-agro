@@ -115,6 +115,7 @@ const Header = () => {
               </svg>
             </button>
             {productsOpen && (
+              
               <div className="absolute left-0 bg-white rounded-md shadow-lg w-40 py-2 z-20 border border-gray-200">
                 <Link
                   to="/products/pickles"
@@ -123,23 +124,55 @@ const Header = () => {
                   Pickles
                 </Link>
                 <Link
-                  to="/products/sauces"
+                  to="/products/tomato-ketchup"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
                 >
-                  Sauces
+                  Tomato Ketchup
                 </Link>
                 <Link
-                  to="/products/pastes"
+                  to="/products/culinary-sauces-vinegar"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
                 >
-                Cooking Pastes
+                  Culinary sauces & vinegar 
+                </Link>
+                <Link
+                  to="/products/speciality-sauce"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Speciality sauce
+                </Link>
+                <Link
+                  to="/products/mayonnaise-derivatives"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Mayonnaise & derivatives
+                </Link>
+                <Link
+                  to="/products/cooking-paste"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Cooking paste 
+
+                </Link>
+                <Link
+                  to="/products/canned-food"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                  onClick={() => setMenuOpen(false)}
+                >
+                 Can food
+
                 </Link>
               </div>
             )}
           </div>
 
           <Link
-            to="/blogs"
+            to="/horeca"
             className="text-black hover:text-blue-600 transition-colors"
           >
             Horeca
@@ -253,29 +286,59 @@ const Header = () => {
                  Pickles
                 </Link>
                 <Link
-                  to="/products/sauces"
+                  to="/products/tomato-ketchup"
                   className="flex justify-between items-center w-full py-2 text-black hover:text-blue-600 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Sauces
+                  Tomato Ketchup
                 </Link>
                 <Link
-                  to="/products/pastes"
+                  to="/products/culinary-sauces-vinegar"
                   className="flex justify-between items-center w-full py-2 text-black hover:text-blue-600 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Cooking Pastes 
+                  Culinary sauces & vinegar 
+                </Link>
+                <Link
+                  to="/products/speciality-sauce"
+                  className="flex justify-between items-center w-full py-2 text-black hover:text-blue-600 transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Speciality sauce
+                </Link>
+                <Link
+                  to="/products/mayonnaise-derivatives"
+                  className="flex justify-between items-center w-full py-2 text-black hover:text-blue-600 transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Mayonnaise & derivatives
+                </Link>
+                <Link
+                  to="/products/cooking-paste"
+                  className="flex justify-between items-center w-full py-2 text-black hover:text-blue-600 transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Cooking paste 
+
+                </Link>
+                <Link
+                  to="/products/canned-food"
+                  className="flex justify-between items-center w-full py-2 text-black hover:text-blue-600 transition-colors"
+                  onClick={() => setMenuOpen(false)}
+                >
+                 Can food
+
                 </Link>
               </div>
             )}
           </div>
 
           <Link
-            to="/blogs"
+            to="/horeca"
             className="block py-2 text-black hover:text-blue-600 transition-colors"
             onClick={handleMobileLinkClick}
           >
-            Blog
+            Horeca
           </Link>
           <Link
             to="/manufacturing-facility"

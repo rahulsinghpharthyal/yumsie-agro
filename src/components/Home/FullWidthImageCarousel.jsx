@@ -38,7 +38,7 @@ const FullWidthImageCarousel = ({ images }) => {
   }, [currentSlide]);
 
   return (
-    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] 2xl:h-[800px] overflow-hidden">
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[750px] 2xl:h-[800px] overflow-hidden">
       {/* Slides */}
       <div className="relative w-full h-full">
         {images.map((image, index) => (
@@ -51,7 +51,7 @@ const FullWidthImageCarousel = ({ images }) => {
             <img
               src={image.image1}
               alt={image.alt || `Slide ${index + 1}`}
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-fit object-center"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
