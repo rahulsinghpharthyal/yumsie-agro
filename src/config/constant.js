@@ -24,10 +24,10 @@ import sauce2 from "../assets/YumsieProducts/Souce/IMG_3792.JPG";
 import sauce3 from "../assets/YumsieProducts/Souce/IMG_3793.jpg";
 import sauce4 from "../assets/YumsieProducts/Souce/IMG_3794.jpg";
 import sauce5 from "../assets/YumsieProducts/Souce/IMG_3795.jpg";
-import Sauces6 from "../assets/YumsieProducts/650/IMG_3839.jpg";
-import Sauces7 from "../assets/YumsieProducts/650/IMG_3844.jpg";
-import Sauces8 from "../assets/YumsieProducts/650/IMG_3847.jpg";
-import Sauces9 from "../assets/YumsieProducts/650/IMG_0158.jpg";
+import Sauces6 from "../assets/YumsieProducts/650/IMG_3839.JPG";
+import Sauces7 from "../assets/YumsieProducts/650/IMG_3844.JPG";
+import Sauces8 from "../assets/YumsieProducts/650/IMG_3847.JPG";
+import Sauces9 from "../assets/YumsieProducts/650/IMG_0158.JPG";
 
 
 import paste1 from "../assets/YumsieProducts/GGP/IMG_3818.JPG";
