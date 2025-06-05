@@ -101,12 +101,12 @@ const ProductCarousel = () => {
                     {product.title}
                   </h3>
                   <div className="flex flex-wrap gap-3 text-sm">
-                    {product.ingredients && (
+                    {product.products && (
                       <span className="bg-white/20 px-3 py-1 rounded-full">
-                        {product.ingredients} ingredients
+                        {product.products} products
                       </span>
                     )}
-                    {product.time && (
+                    {/* {product.time && (
                       <span className="bg-white/20 px-3 py-1 rounded-full">
                         {product.time}
                       </span>
@@ -115,7 +115,7 @@ const ProductCarousel = () => {
                       <span className="bg-white/20 px-3 py-1 rounded-full">
                         {product.calories}
                       </span>
-                    )}
+                    )} */}
                   </div>
                 </div>
               </div>

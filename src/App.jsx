@@ -12,6 +12,7 @@ import BlogPage from "./pages/BlogPage";
 import ScrollToTop from "./pages/ScrollToTop";
 import ProductDescription from "./pages/ProductDescription";
 import ManufacturingFacility from "./pages/ManufacturingFacility";
+import Horeca from "./pages/Horeca";
 
 
 const App = () => {
@@ -26,8 +27,7 @@ const App = () => {
           <Route path="/manufacturing-facility" element={<ManufacturingFacility />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/blogs/:id" element={<Blogs/>}/>
-          <Route path="/blogs" element={<BlogPage/>}/>
-          <Route path="/blogs" element={<BlogPage/>}/>
+          <Route path="/horeca" element={<Horeca/>}/>
           <Route path="/products/:productType" element={<ProductDescription/>}/>
         </Route>
       </Routes>

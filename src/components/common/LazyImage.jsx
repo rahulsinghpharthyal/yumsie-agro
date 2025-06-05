@@ -52,7 +52,7 @@ const LazyImage = ({
         height={height}
         onLoad={() => setIsLoading(false)}
         style={{
-          objectFit: 'cover',
+          objectFit: 'fit',
           width: '100%',
           height: '100%',
         }}

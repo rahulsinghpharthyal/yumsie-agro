@@ -28,6 +28,7 @@ import Sauces6 from "../assets/YumsieProducts/650/IMG_3839.JPG";
 import Sauces7 from "../assets/YumsieProducts/650/IMG_3844.JPG";
 import Sauces8 from "../assets/YumsieProducts/650/IMG_3847.JPG";
 import Sauces9 from "../assets/YumsieProducts/650/IMG_0158.JPG";
+import Sauces10 from "../assets/YumsieProducts/Souce/momoSauce.jpg";
 
 
 import paste1 from "../assets/YumsieProducts/GGP/IMG_3818.JPG";
@@ -37,6 +38,7 @@ import paste4 from "../assets/YumsieProducts/GGP/IMG_3930.jpg";
 
 import continentalSauce from "../assets/YumsieProducts/1.2/IMG_3865.jpg";
 import GingerGarlicPaste from "../assets/YumsieProducts/GGP/IMG_3824.jpg";
+import GingerGarlicPaste1 from "../assets/YumsieProducts/GGP/IMG_3930.JPG";
 import MixedPickle from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
 import GreenChiliPickle from "../assets/YumsieProducts/Pickle/IMG_3800.jpg";
 import Pickles from "../assets/YumsieProducts/Pickle/IMG_3811.JPG";
@@ -44,6 +46,10 @@ import Sauces from "../assets/YumsieProducts/650/IMG_3853.jpg";
 
 import Mayonnaise from "../assets/YumsieProducts/mayonnaise/IMG_0013.JPG";
 import Mayonnaise1 from "../assets/YumsieProducts/mayonnaise/IMG_0098.JPG";
+
+import Can from "../assets/YumsieProducts/can/Image.jpg";
+import can1 from "../assets/YumsieProducts/can/mashroomjpg.jpg";
+import can2 from "../assets/YumsieProducts/can/tomotoPuree.jpg";
 
 // For Contact Us Page:-
 export const contacts = [
@@ -128,38 +134,50 @@ export const ProductData = [
   // },
   {
     title: "Pickles",
-    ingredients: 13,
+    products: 3,
     time: "20 minutes",
     calories: "385 cals/serving",
     image: Pickles,
   },
   {
-    title: "Sauces",
-    ingredients: 13,
+    title: "Tomato ketchup",
     time: "20 minutes",
     calories: "385 cals/serving",
     image: sauce5,
   },
   {
-    title: "Ginger Garlic Paste",
-    ingredients: 13,
+    title: "Culinary sauces & vinegar",
+    products: 4,
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: GingerGarlicPaste,
+    image: sauce5,
   },
   {
-    title: "Mixed Pickle",
-    ingredients: 13,
+    title: "Speciality sauce ",
+    products: 4,
+    time: "20 minutes",
+    calories: "385 cals/serving",
+    image: sauce5,
+  },
+  {
+    title: "Mayonnaise & derivatives",
+    products: 13,
     time: "20 minutes",
     calories: "385 cals/serving",
     image: MixedPickle,
   },
   {
-    title: "Green Chili Pickle",
-    ingredients: 13,
+    title: "Cooking paste",
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: GreenChiliPickle,
+    image: GingerGarlicPaste,
+  },
+  {
+    title: "Can food",
+    products: 3,
+    time: "20 minutes",
+    calories: "385 cals/serving",
+    image: Can,
   },
 ];
 
@@ -433,7 +451,7 @@ export const productData = {
       {
         title: "Momo's Sauce",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce1], 
+        images: [Sauces10], 
       },
       {
         title: "Pizza Pasta Sauce",
@@ -508,12 +526,12 @@ export const productData = {
       {
         title: "Tomato Puree",
         sizes: ["825 gm"],
-        images: [pickle7], 
+        images: [can2], 
       },
       {
         title: "Button Mushroom",
         sizes: ["800 gm"],
-        images: [pickle8], 
+        images: [can1], 
       },
     ],
     images: {
