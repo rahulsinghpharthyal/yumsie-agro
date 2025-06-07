@@ -6,15 +6,20 @@ import { productData } from "../config/constant";
 const ProductDescription = () => {
   const { productType } = useParams();
   const product = productData[productType];
-  if (!product) {
-    return (
-      <div className="text-center py-20">
+  return (
+    <>
+  {product ? (
+
+        <ProductDescriptonCard {...product} />
+  ):(
+
+    <div className="text-center py-20">
         <h2 className="text-2xl text-red-600">Product not found</h2>
       </div>
-    );
-  }
-
-  return <ProductDescriptonCard {...product} />;
+  )
+}
+  </>
+)
 };
 
 export default ProductDescription;
