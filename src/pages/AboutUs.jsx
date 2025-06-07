@@ -9,11 +9,11 @@ const AboutUs = () => {
     <section className="px-4 md:px-8 lg:px-0 mt-28">
       {/* Header Section */}
       <div className="relative w-full h-48 sm:h-64 md:h-96">
-        <LazyImage
+        <img
           src={aboutImage}
           alt="About Us"
-          className="w-full h-full"
-          priority={true} // Load header image immediately
+          className="w-full h-full object-cover"
+          loading="lazy"
         />
         {/* Optional overlay title */}
         {/* <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">

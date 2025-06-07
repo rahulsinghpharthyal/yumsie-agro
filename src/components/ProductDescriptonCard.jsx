@@ -1,17 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import LazyImage from './common/LazyImage';
 
 const ProductDescriptonCard = ({ heading, subheading, description, products, images }) => {
   return (
      <section className="w-full text-center pb-12 bg-gray-50">
       {/* Hero Banner Section */}
       <div className="relative w-full overflow-hidden transform transition-all duration-500 hover:scale-[1.01]">
-        <LazyImage
+        <img
           src={images.banner}
           alt={heading}
           className="w-full h-72 object-cover md:h-96 lg:h-[500px]"
-          priority={true}
+          loading='lazy'
         />
         <div className="absolute inset-0 bg-gradient-to-r from-lime-400/80 via-lime-300/70 to-white/30 flex flex-col justify-center items-center p-6 text-white text-shadow-lg">
           <h1 className="font-extrabold text-4xl md:text-6xl lg:text-7xl drop-shadow-md animate-fade-in-down">

@@ -1,23 +1,26 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 //Pages:-
-import MainLayout from "./pages/MainLayout";
-import Home from "./pages/Home";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import FAQS from "./pages/FAQS";
-import Blogs from "./pages/Blogs";
-import BlogPage from "./pages/BlogPage";
-import ScrollToTop from "./pages/ScrollToTop";
-import ProductDescription from "./pages/ProductDescription";
-import ManufacturingFacility from "./pages/ManufacturingFacility";
-import Horeca from "./pages/Horeca";
+const MainLayout = lazy(()=>import("./pages/MainLayout"));
+const Home = lazy(()=>import("./pages/Home"));
+const AboutUs = lazy(()=>import("./pages/AboutUs"));
+const ContactUs = lazy(()=> import ("./pages/ContactUs"));
+const FAQS = lazy(()=> import  ("./pages/FAQS"));
+const Blogs = lazy(()=> import ("./pages/Blogs"));
+const BlogPage = lazy(()=> import ("./pages/BlogPage"));
+const ScrollToTop = lazy(()=>import  ("./pages/ScrollToTop"));
+const ProductDescription = lazy(()=> import("./pages/ProductDescription"));
+const ManufacturingFacility = lazy(()=> import ("./pages/ManufacturingFacility"));
+const Horeca = lazy(()=>import( "./pages/Horeca"));
 
 
 const App = () => {
   return (
     <Router>
+      <Suspense fallback={<div>....Loading</div>}>
+        
       <ScrollToTop/>
       <Routes>
         <Route element={<MainLayout />}>
@@ -31,6 +34,7 @@ const App = () => {
           <Route path="/products/:productType" element={<ProductDescription/>}/>
         </Route>
       </Routes>
+      </Suspense>
     </Router>
   );
 };

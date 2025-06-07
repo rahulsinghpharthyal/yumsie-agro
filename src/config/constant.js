@@ -137,19 +137,22 @@ export const ProductData = [
     time: "20 minutes",
     calories: "385 cals/serving",
     image: Pickles,
+    link: '/products/pickles'
   },
   {
     title: "Tomato ketchup",
     time: "20 minutes",
     calories: "385 cals/serving",
     image: sauce5,
+    link: '/products/tomato-ketchup'
   },
   {
     title: "Culinary sauces & vinegar",
     products: 4,
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: sauce5,
+    image: Sauces,
+    link: '/products/culinary-sauces-vinegar',
   },
   {
     title: "Speciality sauce ",
@@ -157,19 +160,22 @@ export const ProductData = [
     time: "20 minutes",
     calories: "385 cals/serving",
     image: sauce5,
+    link: '/products/speciality-sauce'
   },
   {
     title: "Mayonnaise & derivatives",
     products: 13,
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: MixedPickle,
+    image: Mayonnaise,
+    link: '/products/mayonnaise-derivatives'
   },
   {
     title: "Cooking paste",
     time: "20 minutes",
     calories: "385 cals/serving",
     image: GingerGarlicPaste,
+    link: '/products/cooking-paste'
   },
   {
     title: "Can food",
@@ -177,6 +183,7 @@ export const ProductData = [
     time: "20 minutes",
     calories: "385 cals/serving",
     image: Can,
+    link: '/products/canned-food'
   },
 ];
 

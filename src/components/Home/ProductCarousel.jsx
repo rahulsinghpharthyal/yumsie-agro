@@ -7,6 +7,7 @@ import 'swiper/css/effect-fade';
 import LazyImage from "../common/LazyImage";
 import { ProductData } from "../../config/constant";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ProductCarousel = () => {
   const swiperRef = useRef(null);
@@ -24,7 +25,7 @@ const ProductCarousel = () => {
   };
 
   return (
-    <section className="max-w-[1920px] mx-auto sm:px-6 py-16 sm:py-20 overflow-hidden bg-white">
+    <section className="max-w-[1920px] mx-auto sm:px-6 py-10 sm:py-5 overflow-hidden bg-white">
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-semibold text-gray-800">
           Premium Products that Fit Your Lifestyle
@@ -88,13 +89,14 @@ const ProductCarousel = () => {
         >
           {ProductData.map((product, index) => (
             <SwiperSlide key={index}>
+                <Link to={product.link}>
               <div className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg">
-                <LazyImage
+                <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-[300px] sm:h-[350px] object-cover will-change-transform"
-                  loading={index < 3 ? "eager" : "lazy"}
-                />
+                  className="w-full h-[300px] sm:h-[350px] object-fill will-change-transform"
+                  loading="lazy"
+                  />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 text-white">
                   <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">
@@ -113,12 +115,13 @@ const ProductCarousel = () => {
                     )}
                     {product.calories && (
                       <span className="bg-white/20 px-3 py-1 rounded-full">
-                        {product.calories}
+                      {product.calories}
                       </span>
-                    )} */}
+                      )} */}
                   </div>
                 </div>
               </div>
+                      </Link>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -1,14 +1,13 @@
 import React from "react";
-import HomeCarousel from "../components/Home/HomeCarousel";
-import WhoAreWe from "../components/Home/WhoAreWe";
+// import WhoAreWe from "../components/Home/WhoAreWe";
 import ManufacturingFacility from "../components/Home/ManufacturingFacility";
-import OurServices from "../components/Home/OurServices";
+// import OurServices from "../components/Home/OurServices";
 import ProductCarousel from "../components/Home/ProductCarousel";
-import FAQ from "../components/Home/FAQ";
-import CertificateSection from "../components/Home/CertificateSection";
-import BlogSection from "../components/Home/BlogSection";
-import FullWidthImageCarousel from "../components/Home/FullWidthImageCarousel";
+// import FAQ from "../components/Home/FAQ";
+// import CertificateSection from "../components/Home/CertificateSection";
+// import BlogSection from "../components/Home/BlogSection";
 import { HomeCarouselSlides } from "../config/constant";
+import HomeCarousel from "../components/Home/HomeCarousel";
 
 const Home = () => {
   return (
@@ -16,10 +15,10 @@ const Home = () => {
       {/* Hero or Carousel */}
       <section className="flex justify-center items-center">
         {/* <HomeCarousel /> */}
-        <FullWidthImageCarousel images={HomeCarouselSlides}/>
+        <HomeCarousel images={HomeCarouselSlides}/>
       </section>
 
-      <section className="px-6 md:px-8 lg:px-6 lg:mt-16">
+      <section className="px-6 md:px-8 lg:px-6 lg:mt-5">
         <ProductCarousel />
       </section>
       {/* Who Are We Section */}

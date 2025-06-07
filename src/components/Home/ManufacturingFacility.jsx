@@ -59,6 +59,7 @@ const ManufacturingFacility = () => {
             src={factoryImage}
             alt="Factory jars"
             className="w-full h-auto object-cover rounded-lg shadow-md"
+            loading="lazy"
           />
         </div>
       </div>

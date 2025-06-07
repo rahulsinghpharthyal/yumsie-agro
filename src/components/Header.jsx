@@ -200,7 +200,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-gray-700 hover:text-blue-600 z-50" // Ensure button is above mobile menu
+          className="md:hidden text-gray-700 hover:text-blue-600 z-50 hover:cursor-pointer" // Ensure button is above mobile menu
           onClick={handleMenuToggle}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}

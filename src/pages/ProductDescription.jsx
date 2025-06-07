@@ -5,9 +5,7 @@ import { productData } from "../config/constant";
 
 const ProductDescription = () => {
   const { productType } = useParams();
-  console.log(productType);
   const product = productData[productType];
-  console.log(product)
   if (!product) {
     return (
       <div className="text-center py-20">
