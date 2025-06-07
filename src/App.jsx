@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Loading from "./components/common/Loading";
 
 
 //Pages:-
@@ -19,7 +20,7 @@ const Horeca = lazy(()=>import( "./pages/Horeca"));
 const App = () => {
   return (
     <Router>
-      <Suspense fallback={<div>....Loading</div>}>
+      <Suspense fallback={<Loading/>}>
         
       <ScrollToTop/>
       <Routes>
