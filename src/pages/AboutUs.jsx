@@ -1,5 +1,5 @@
 import ClientSection from "../components/Aboutus/ClientSection";
-import aboutImage from "../assets/AboutUs.png";
+import aboutImage from "../assets/AboutUs.webp";
 import MissionAndVision from "../components/Aboutus/MissionAndVision";
 import LazyImage from "../components/common/LazyImage";
 import WhoAreWe from "../components/Home/WhoAreWe";
