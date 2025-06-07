@@ -8,6 +8,7 @@ import LazyImage from "../common/LazyImage";
 import { ProductData } from "../../config/constant";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProductCarousel = () => {
   const swiperRef = useRef(null);
@@ -91,7 +92,7 @@ const ProductCarousel = () => {
             <SwiperSlide key={index}>
                 <Link to={product.link}>
               <div className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg">
-                <img
+                <LazyLoadImage
                   src={product.image}
                   alt={product.title}
                   className="w-full h-[300px] sm:h-[350px] object-fill will-change-transform"

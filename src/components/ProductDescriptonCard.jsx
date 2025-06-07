@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {Link} from 'react-router-dom';
 
 const ProductDescriptonCard = ({ heading, subheading, description, products, images }) => {
@@ -41,7 +42,7 @@ const ProductDescriptonCard = ({ heading, subheading, description, products, ima
           >
             {product.images && product.images.length > 0 && (
               <div className="relative h-60 w-full overflow-hidden">
-                <img
+                <LazyLoadImage
                   src={product.images[0]} // Display first image as a prominent one
                   alt={product.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
@@ -65,7 +66,7 @@ const ProductDescriptonCard = ({ heading, subheading, description, products, ima
               {product.images && product.images.length > 1 && (
                 <div className="grid grid-cols-2 gap-2 mt-4">
                   {product.images.slice(1, 3).map((img, imgIdx) => ( // Show next two images
-                    <img
+                    <LazyLoadImage
                       key={imgIdx}
                       src={img}
                       alt={`${product.title} detail ${imgIdx + 2}`}
