@@ -41,11 +41,11 @@ const ProductDescriptonCard = ({ heading, subheading, description, products, ima
           >
             {product.images && product.images.length > 0 && (
               <div className="relative h-60 w-full overflow-hidden">
-                <LazyImage
+                <img
                   src={product.images[0]} // Display first image as a prominent one
                   alt={product.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                  priority={idx < 3} 
+                  loading='lazy'
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-xl md:text-2xl font-bold text-white text-shadow-sm">{product.title}</h3>
@@ -65,12 +65,13 @@ const ProductDescriptonCard = ({ heading, subheading, description, products, ima
               {product.images && product.images.length > 1 && (
                 <div className="grid grid-cols-2 gap-2 mt-4">
                   {product.images.slice(1, 3).map((img, imgIdx) => ( // Show next two images
-                    <LazyImage
+                    <img
                       key={imgIdx}
                       src={img}
                       alt={`${product.title} detail ${imgIdx + 2}`}
                       className="rounded-md w-full h-24 object-cover
                        shadow-sm transition-transform duration-200 hover:scale-105"
+                       loading='lazy'
                     />
                   ))}
                 </div>
