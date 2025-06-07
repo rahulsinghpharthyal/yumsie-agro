@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 const HomeCarousel = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,10 +51,11 @@ const HomeCarousel = ({ images }) => {
               currentSlide === index ? "opacity-100" : "opacity-0"
             }`}
           >
-            <img
+            <LazyLoadImage
               src={image.image1}
               alt={image.alt || `Slide ${index + 1}`}
-              className="w-full h-full object-fill object-center"
+              // effect="blur"
+              className="absolute inset-0 w-full h-full object-cover object-center"
               loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>

@@ -25,7 +25,7 @@ const ProductCarousel = () => {
   };
 
   return (
-    <section className="max-w-[1920px] mx-auto sm:px-6 py-10 sm:py-5 overflow-hidden bg-white">
+    <section className="max-w-[1920px] mx-auto sm:px-6 py-20 sm:py-5 m-10 sm:m-0 overflow-hidden bg-white">
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-semibold text-gray-800">
           Premium Products that Fit Your Lifestyle
