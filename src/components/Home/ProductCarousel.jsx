@@ -27,7 +27,7 @@ const ProductCarousel = () => {
 
   return (
     <section className="max-w-[1920px] mx-auto sm:px-6 py-20 sm:py-5 m-10 sm:m-0 overflow-hidden bg-white">
-      <div className="text-center mb-12">
+      {/* <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-semibold text-gray-800">
           Premium Products that Fit Your Lifestyle
         </h2>
@@ -38,7 +38,7 @@ const ProductCarousel = () => {
         <p className="max-w-3xl mx-auto text-gray-600 text-lg px-4">
           Hundreds of easy recipes crafted by dietitians. Here are a few samples:
         </p>
-      </div>
+      </div> */}
 
       <div className="relative product-carousel">
         <button
@@ -103,12 +103,12 @@ const ProductCarousel = () => {
                   <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">
                     {product.title}
                   </h3>
-                  <div className="flex flex-wrap gap-3 text-sm">
+                  {/* <div className="flex flex-wrap gap-3 text-sm">
                     {product.products && (
                       <span className="bg-white/20 px-3 py-1 rounded-full">
                         {product.products} products
                       </span>
-                    )}
+                    )} */}
                     {/* {product.time && (
                       <span className="bg-white/20 px-3 py-1 rounded-full">
                         {product.time}
@@ -119,7 +119,7 @@ const ProductCarousel = () => {
                       {product.calories}
                       </span>
                       )} */}
-                  </div>
+                  {/* </div> */}
                 </div>
               </div>
                       </Link>

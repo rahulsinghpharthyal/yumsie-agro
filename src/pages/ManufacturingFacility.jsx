@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaIndustry, FaLeaf, FaFlask, FaMortarPestle } from 'react-icons/fa';
+import { FaLeaf, FaFlask, FaMortarPestle } from 'react-icons/fa';
 import { MdScience, MdGroups } from 'react-icons/md';
 import { GiWeightScale } from 'react-icons/gi';
+import OurServices from '../components/Home/OurServices';
 
 const ManufacturingFacility = () => {
   const facilities = [
@@ -155,6 +156,10 @@ const ManufacturingFacility = () => {
         </div>
       </section>
 
+       <section className="px-4 md:px-8 lg:px-0 lg:mt-16">
+        <OurServices />
+      </section>
+
       {/* Quality Commitment */}
       <section className="bg-gradient-to-r from-cyan-600 to-cyan-700 py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -172,14 +177,14 @@ const ManufacturingFacility = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 flex justify-center items-center bg-gray-50">
+      {/* <section className="py-16 flex justify-center items-center bg-gray-50">
         <Link 
           to="/contact-us" 
           className="text-center text-xl bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium px-10 py-6 rounded-4xl shadow transition-all border border-gray-300"
         >
           Contact Us
         </Link>
-      </section>
+      </section> */}
     </div>
   );
 };

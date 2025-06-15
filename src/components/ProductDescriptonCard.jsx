@@ -2,11 +2,12 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {Link} from 'react-router-dom';
 
-const ProductDescriptonCard = ({ heading, subheading, description, products, images }) => {
+const ProductDescriptonCard = ({ heading, subheading, description, products, images, flag }) => {
+  console.log('tis is products', products)
   return (
-     <section className="w-full text-center pb-12 bg-gray-50">
+     <section className="w-full text-center pb-12 ">
       {/* Hero Banner Section */}
-      <div className="relative w-full overflow-hidden transform transition-all duration-500 hover:scale-[1.01]">
+      {/* <div className="relative w-full overflow-hidden transform transition-all duration-500 hover:scale-[1.01]">
         <img
           src={images.banner}
           alt={heading}
@@ -21,16 +22,16 @@ const ProductDescriptonCard = ({ heading, subheading, description, products, ima
             {subheading}
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Category Description Section */}
-      <div className="mt-16 max-w-5xl mx-auto px-4">
+      <div className="mt-22 max-w-5xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 text-gray-800 relative inline-block group">
-          <span className="relative z-10">{heading.toUpperCase()} CATEGORY</span>
+          <span className="relative z-10">{heading.toUpperCase()}</span>
         </h2>
-        <p className="text-gray-700 leading-relaxed mb-8 text-lg md:text-xl max-w-3xl mx-auto">
+        {/* <p className="text-gray-700 leading-relaxed mb-8 text-lg md:text-xl max-w-3xl mx-auto">
           {description}
-        </p>
+        </p> */}
       </div>
 
       {/* Individual Products Grid */}
@@ -45,7 +46,7 @@ const ProductDescriptonCard = ({ heading, subheading, description, products, ima
                 <LazyLoadImage
                   src={product.images[0]} // Display first image as a prominent one
                   alt={product.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  className={`w-full h-full ${flag ?  'object-contain' : 'object-cover'} transition-transform duration-300 hover:scale-110`}
                   loading='lazy'
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">

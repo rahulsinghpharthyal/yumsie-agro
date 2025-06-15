@@ -60,8 +60,8 @@ const Footer = () => {
           <div className="flex items-start gap-4">
             <HiOutlinePhone size={30} className="text-cyan-600" />
             <div>
-              <p className="text-white font-semibold">09690002643</p>
-              <p className="text-gray-400">Mon–Sun 9am–6pm</p>
+              <p className="text-white font-semibold">09891445265</p>
+              {/* <p className="text-gray-400">Mon–Sun 9am–6pm</p> */}
             </div>
           </div>
           <div className="flex items-start gap-4">
@@ -69,12 +69,12 @@ const Footer = () => {
             <div>
               {/* <p >info@yusimeagro.com</p> */}
               <a
-                href="mailto:supportInfo@yumsiefoods.com"
+                href="mailto:Info@yumsiefoods.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white font-semibold"
               >
-                info@yusimeagro.com
+                Info@yumsiefoods.com
               </a>
               <p className="text-gray-400">Customer support</p>
             </div>

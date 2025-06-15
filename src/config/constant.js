@@ -1,29 +1,11 @@
-import { MdEmail, MdPhone, MdYard } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { MdEmail, MdPhone } from "react-icons/md";
+import { FaFacebook, FaInstagram} from "react-icons/fa";
 
 import mango_pickle1 from "../assets/YumsieProducts/Pickle/IMG_3797.JPG";
 import pickle1 from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
 import pickle2 from "../assets/YumsieProducts/Pickle/IMG_3800.jpg";
-import pickle3 from "../assets/YumsieProducts/Pickle/IMG_3801.jpg";
-import pickle4 from "../assets/YumsieProducts/Pickle/IMG_3802.jpg";
-import pickle5 from "../assets/YumsieProducts/Pickle/IMG_3803.jpg";
-import pickle6 from "../assets/YumsieProducts/Pickle/IMG_3804.jpg";
-import pickle7 from "../assets/YumsieProducts/Pickle/IMG_3805.jpg";
-import pickle8 from "../assets/YumsieProducts/Pickle/IMG_3807.JPG";
-import pickle9 from "../assets/YumsieProducts/Pickle/IMG_3808.JPG";
-import pickle10 from "../assets/YumsieProducts/Pickle/IMG_3809.JPG";
-import pickle11 from "../assets/YumsieProducts/Pickle/IMG_3810.JPG";
-import pickle12 from "../assets/YumsieProducts/Pickle/IMG_3811.JPG";
-import pickle13 from "../assets/YumsieProducts/Pickle/IMG_3816.JPG";
-import pickle14 from "../assets/YumsieProducts/Pickle/IMG_3826.JPG";
-import pickle15 from "../assets/YumsieProducts/Pickle/IMG_3827.JPG";
-import pickle16 from "../assets/YumsieProducts/Pickle/IMG_3830.JPG";
 
 import sauce1 from "../assets/YumsieProducts/Souce/IMG_3788.JPG";
-import sauce2 from "../assets/YumsieProducts/Souce/IMG_3792.JPG";
-import sauce3 from "../assets/YumsieProducts/Souce/IMG_3793.jpg";
-import sauce4 from "../assets/YumsieProducts/Souce/IMG_3794.jpg";
-import sauce5 from "../assets/YumsieProducts/Souce/IMG_3795.jpg";
 import Sauces6 from "../assets/YumsieProducts/650/IMG_3839.JPG";
 import Sauces7 from "../assets/YumsieProducts/650/IMG_3844.JPG";
 import Sauces8 from "../assets/YumsieProducts/650/IMG_3847.JPG";
@@ -32,23 +14,29 @@ import Sauces10 from "../assets/YumsieProducts/Souce/momoSauce.jpg";
 
 
 import paste1 from "../assets/YumsieProducts/GGP/IMG_3818.JPG";
-import paste2 from "../assets/YumsieProducts/GGP/IMG_3819.JPG";
-import paste3 from "../assets/YumsieProducts/GGP/IMG_3820.JPG";
-import paste4 from "../assets/YumsieProducts/GGP/IMG_3930.jpg";
 
-import continentalSauce from "../assets/YumsieProducts/1.2/IMG_3865.jpg";
+
 import GingerGarlicPaste from "../assets/YumsieProducts/GGP/IMG_3824.jpg";
-import MixedPickle from "../assets/YumsieProducts/Pickle/IMG_3799.JPG";
-import GreenChiliPickle from "../assets/YumsieProducts/Pickle/IMG_3800.jpg";
-import Pickles from "../assets/YumsieProducts/Pickle/IMG_3811.JPG";
+import PicklesHome from "../assets/YumsieProducts/Pickle/IMG_3816.JPG";
 import Sauces from "../assets/YumsieProducts/650/IMG_3853.jpg";
 
 import Mayonnaise from "../assets/YumsieProducts/mayonnaise/IMG_0013.JPG";
-import Mayonnaise1 from "../assets/YumsieProducts/mayonnaise/IMG_0098.JPG";
 
 import Can from "../assets/YumsieProducts/can/Image.jpg";
 import can1 from "../assets/YumsieProducts/can/mashroomjpg.jpg";
-import can2 from "../assets/YumsieProducts/can/tomotoPuree.jpg";
+import can2 from "../assets/YumsieProducts/can/IMG_0189.JPG";
+import can3 from "../assets/YumsieProducts/can/Green_peas.JPG";
+import sachet from "../assets/YumsieProducts/sachet/IMG_0138.JPG";
+
+import pizzaPasta from "../assets/YumsieProducts/Souce/pasta_pizza.jpg";
+import mainPizzaPasta from "../assets/YumsieProducts/Souce/pasta_Momosauce.jpg";
+import availableNow from "../assets/availbale_now.jpg";
+
+import cheese_blend from "../assets/YumsieProducts/Souce/Cheese_blend.jpg"
+import tandoori_mayonnaise from "../assets/YumsieProducts/mayonnaise/IMG_9988.JPG";
+import GGG from '../assets/YumsieProducts/GGP/IMG_0200.JPG';
+import pickle_sachet from '../assets/YumsieProducts/sachet/IMG_9910.JPG';
+
 
 // For Contact Us Page:-
 export const contacts = [
@@ -81,7 +69,7 @@ export const contacts = [
     title: "Email Us",
     description: "Send us an email anytime.",
     buttonText: "Send Mail",
-    buttonLink: "mailto:supportInfo@yumsiefoods.com",
+    buttonLink:"mailto:Info@yumsiefoods.com",
   },
   {
     Icon: MdPhone,
@@ -89,7 +77,7 @@ export const contacts = [
     title: "Call Us",
     description: "We're just a call away.",
     buttonText: "Call Now",
-    buttonLink: "tel:+918800123456",
+    buttonLink: "tel:+919891445265",
   },
 ];
 
@@ -101,7 +89,7 @@ export const HomeCarouselSlides = [
     brand: "Yumsie",
     description:
       "From tangy mango to spicy chili and zesty lemon, Yumsie's range of traditional Indian pickles brings home the true flavor of heritage. Handcrafted in small batches with natural ingredients and no preservatives.",
-    image1: Pickles,
+    image1: PicklesHome,
     buttonText: "EXPLORE PICKLES",
   },
   {
@@ -124,67 +112,64 @@ export const HomeCarouselSlides = [
 
 // Product Carousel data:-
 export const ProductData = [
-  // {
-  //   title: "Continental Sauce",
-  //   ingredients: 7,
-  //   time: "35 minutes",
-  //   calories: "326 cals/serving",
-  //   image: continentalSauce,
-  // },
   {
-    title: "Pickles",
-    products: 3,
+    title: "Pickle",
+    // products: 3,
     time: "20 minutes",
     calories: "385 cals/serving",
-    image: Pickles,
+    image: PicklesHome,
     link: '/products/pickles'
   },
   {
-    title: "Tomato ketchup",
-    time: "20 minutes",
-    calories: "385 cals/serving",
-    image: sauce5,
-    link: '/products/tomato-ketchup'
-  },
-  {
-    title: "Culinary sauces & vinegar",
-    products: 4,
-    time: "20 minutes",
-    calories: "385 cals/serving",
-    image: Sauces,
-    link: '/products/culinary-sauces-vinegar',
-  },
-  {
-    title: "Speciality sauce ",
-    products: 4,
-    time: "20 minutes",
-    calories: "385 cals/serving",
-    image: sauce5,
-    link: '/products/speciality-sauce'
-  },
-  {
-    title: "Mayonnaise & derivatives",
-    products: 13,
-    time: "20 minutes",
-    calories: "385 cals/serving",
-    image: Mayonnaise,
-    link: '/products/mayonnaise-derivatives'
-  },
-  {
-    title: "Cooking paste",
+    title: "Cooking Paste",
     time: "20 minutes",
     calories: "385 cals/serving",
     image: GingerGarlicPaste,
     link: '/products/cooking-paste'
   },
   {
-    title: "Can food",
-    products: 3,
+    title: "Mayonnaise & Derivatives",
+    // products: 13,
+    time: "20 minutes",
+    calories: "385 cals/serving",
+    image: Mayonnaise,
+    link: '/products/mayonnaise-derivatives'
+  },
+   {
+    title: "Can Food",
+    // products: 3,
     time: "20 minutes",
     calories: "385 cals/serving",
     image: Can,
     link: '/products/canned-food'
   },
+   {
+    title: "Speciality Sauce ",
+    // products: 4
+    time: "20 minutes",
+    calories: "385 cals/serving",
+    image: mainPizzaPasta,
+    link: '/products/speciality-sauce'
+  },
+  {
+    title: "Tomato Ketchup",
+    time: "20 minutes",
+    calories: "385 cals/serving",
+    image: sachet,
+    link: '/products/tomato-ketchup'
+  },
+  {
+    title: "Culinary Sauce",
+    // products: 4,
+    time: "20 minutes",
+    calories: "385 cals/serving",
+    image: Sauces,
+    link: '/products/culinary-sauces-vinegar',
+  },
+ 
+  
+ 
+ 
 ];
 
 // Faq Data:-
@@ -380,24 +365,29 @@ Modern chefs blend sauces from different cuisines—like teriyaki-glazed tacos o
 
 export const productData = {
   pickles: {
-    heading: "Pickles That Pop",
+    heading: "Pickles",
     subheading: "Tangy, spicy, and bold...",
     description: `Our pickles are aged and spiced to perfection, offering a burst of authentic Indian flavors.`,
     products: [
       {
         title: "Mix Pickle",
         sizes: ["1 kg", "500 gm", "200 gm"],
-        images: [pickle16, pickle1, pickle3], 
+        images: [pickle1], 
       },
       {
         title: "Mango Pickle",
         sizes: ["1 kg", "500 gm", "200 gm"],
-        images: [pickle15,  pickle4,mango_pickle1], 
+        images: [mango_pickle1], 
       },
       {
         title: "Green Chilli Pickle",
         sizes: ["1 kg", "500 gm", "200 gm"],
-        images: [pickle14, pickle5, pickle6], 
+        images: [pickle2], 
+      },
+      {
+        title: "Mixed Pickle Sachet",
+        sizes: ["8 gm"],
+        images: [pickle_sachet], 
       },
     ],
     images: {
@@ -411,8 +401,8 @@ export const productData = {
     products: [
       {
         title: "Tomato Ketchup",
-        sizes: ["1 kg", "500 gm", "200 gm"],
-        images: [sauce1, sauce2], 
+        sizes: ["1 kg", "500 gm", "200 gm", "8 gm sachet"],
+        images: [sachet], 
       },
     ],
     images: {
@@ -420,29 +410,35 @@ export const productData = {
     },
   },
   'culinary-sauces-vinegar': {
-    heading: "Culinary Sauces & Vinegar",
+    flag: true,
+    heading: "Culinary Sauces",
     subheading: "Elevate your dishes...",
     description: `A range of versatile sauces and vinegars to enhance any meal, from spicy delights to zesty dressings.`,
     products: [
       {
         title: "Green Chilli Sauce",
         sizes: ["650 gm", "200 gm"],
-        images: [sauce4, Sauces7], 
+        images: [Sauces7], 
       },
       {
         title: "Red Chilli Sauce",
         sizes: ["650 gm", "200 gm"],
-        images: [sauce3, Sauces6], 
+        images: [Sauces6], 
       },
       {
         title: "Soya Sauce",
         sizes: ["650 gm", "200 gm"],
-        images: [sauce1, Sauces8], 
+        images: [Sauces8], 
       },
       {
         title: "White Vinegar",
         sizes: ["610 ml", "180 ml"],
         images: [Sauces9], 
+      },
+      {
+        title: "Green Chilli Sauce Sachet",
+        sizes: ["8 gm"],
+        images: [availableNow], 
       },
     ],
     images: {
@@ -450,6 +446,7 @@ export const productData = {
     },
   },
   'speciality-sauce': {
+    flag: true,
     heading: "Speciality Sauces",
     subheading: "Unique flavors, unforgettable taste...",
     description: `Explore our unique collection of speciality sauces crafted to perfection for an unforgettable culinary experience.`,
@@ -462,17 +459,17 @@ export const productData = {
       {
         title: "Pizza Pasta Sauce",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce2], 
+        images: [pizzaPasta], 
       },
       {
         title: "Schezwan Sauce",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce3], 
+        images: [availableNow], 
       },
       {
         title: "Chilly Garlic Sauce",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce4], 
+        images: [availableNow], 
       },
     ],
     images: {
@@ -480,6 +477,7 @@ export const productData = {
     },
   },
   'mayonnaise-derivatives': {
+    flag: true,
     heading: "Mayonnaise & Derivatives",
     subheading: "Creamy, rich, and versatile...",
     description: `Our creamy mayonnaise and its delicious derivatives are perfect for enhancing sandwiches, salads, and countless other dishes.`,
@@ -487,22 +485,22 @@ export const productData = {
       {
         title: "Eggless Mayonnaise",
         sizes: ["1 kg", "200 gm"],
-        images: [Mayonnaise, Mayonnaise1], 
+        images: [Mayonnaise], 
       },
       {
-        title: "Cheese Mayonnaise",
+        title: "Cheese Blend",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce2], 
+        images: [cheese_blend], 
       },
       {
         title: "Tandoori Mayonnaise",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce3], 
+        images: [tandoori_mayonnaise], 
       },
       {
         title: "Thousand Island",
         sizes: ["1 kg", "200 gm"],
-        images: [sauce4], 
+        images: [availableNow], 
       },
     ],
     images: {
@@ -516,8 +514,13 @@ export const productData = {
     products: [
       {
         title: "Ginger Garlic Paste",
-        sizes: ["25 gm", "200 gm", "500 gm", "1 kg"],
-        images: [GingerGarlicPaste, paste1, paste2], 
+        sizes: ["200 gm", "500 gm", "1 kg"],
+        images: [GingerGarlicPaste],
+      },
+      {
+        title: "Ginger Garlic Paste (sachet)",
+        sizes: ["25 gm"],
+        images: [GGG], 
       },
     ],
     images: {
@@ -525,6 +528,7 @@ export const productData = {
     },
   },
   'canned-food': {
+    flag: true,
     heading: "Canned Food",
     subheading: "Convenience meets quality...",
     description: `High-quality canned foods for quick and easy meals, preserving freshness and flavor for your convenience.`,
@@ -538,6 +542,11 @@ export const productData = {
         title: "Button Mushroom",
         sizes: ["800 gm"],
         images: [can1], 
+      },
+      {
+        title: "Green Peas",
+        sizes: ["800 gm"],
+        images: [can3], 
       },
     ],
     images: {
